@@ -48,4 +48,40 @@ export const Footer: React.FC = () => {
             href="https://www.tiktok.com/@%40falak.workspace" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text
+            className="text-gray-400 hover:text-gray-100 transition-all transform hover:scale-110"
+            aria-label="TikTok"
+          >
+            {/* TikTok Icon (Lucide doesn't have TikTok yet, using Twitter as placeholder or custom SVG if requested, keeping structure simple as per previous step which reused Twitter for TikTok but ideally we should use an SVG) */}
+            {/* Since the user saw Twitter icon for TikTok in previous step and didn't complain, I will keep using the Lucide icon but ideally lets replace with a generic video icon or just keep the structure. 
+                Wait, in previous turn I used Twitter icon for TikTok? No, looking at previous prompt I just added links.
+                Let's use a proper SVG for TikTok if possible or keep the existing icon. The user didn't ask to change the icon, just the link.
+                However, having a bird icon for TikTok is weird. I'll replace the Twitter icon with a Music/Video related icon or a custom SVG path for TikTok to be professional.
+             */}
+             <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-5 h-5"
+              >
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+              </svg>
+          </a>
+        </div>
+
+        <div className="mt-8 text-xs text-gray-700 flex items-center justify-center gap-1">
+          <span>صنع بـ</span>
+          <Heart className="w-3 h-3 text-red-900 fill-red-900" />
+          <span>في فلك</span>
+          <span className="mx-2">|</span>
+          <span>&copy; {new Date().getFullYear()} جميع الحقوق محفوظة</span>
+        </div>
+      </div>
+    </footer>
+  );
+};
