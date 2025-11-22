@@ -17,6 +17,8 @@ export const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'الرئيسية', href: '#hero' },
     { name: 'عن فلك', href: '#about' },
+    { name: 'الكورسات', href: '#courses' },
+    { name: 'العروض', href: '#offers' },
     { name: 'الأسعار', href: '#pricing' },
     { name: 'تواصل معنا', href: '#contact' },
   ];
@@ -43,7 +45,7 @@ export const Navbar: React.FC = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8 space-x-reverse">
+            <div className="ml-10 flex items-baseline space-x-6 space-x-reverse">
               {navLinks.map((link) => (
                 <a
                   key={link.name}

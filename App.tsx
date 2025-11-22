@@ -3,6 +3,8 @@ import { StarField } from './components/StarField';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
+import { Courses } from './components/Courses';
+import { SpecialOffers } from './components/SpecialOffers';
 import { Pricing } from './components/Pricing';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
@@ -17,6 +19,8 @@ export default function App() {
         <main>
           <Hero />
           <About />
+          <Courses />
+          <SpecialOffers />
           <Pricing />
           <Contact />
         </main>
